@@ -117,17 +117,14 @@ button {
 
 .btn {
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 .btn h4 {
     color: #ED7839;
-    margin-top: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-}
-
-.icone {
-    color: #fff;
 }
 
 textarea, input{
