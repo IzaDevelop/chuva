@@ -2,109 +2,54 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-     font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: #fafafa;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#sidebarCollapse {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background: #ED7839;
-}
-
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #000;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-}
-
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px, 2px);
-}
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-}
-
-.wrapper {
-    display: flex;
-    align-items: stretch;
-    perspective: 1500px; 
-}
-
-#sidebar, #sidebar a {
-    width: 250px;
     background: #fff;
-    color: #725C5C;
-    transition: all 0.3s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: center left;
+    display: flex;
 }
 
-.sidebar-header {
-    color: #fafafa;
-    text-transform: uppercase;
-    padding: 20px 5px 10px;
-    text-align: center;
-    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-    text-decoration: none;
-}
-#sidebar ul li a:hover {
-    color: #fafafa;
-    background: #FFB354;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #EE7A3A;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-    transform: rotateY(100deg);
-}
-
-.perfil {
+#header {
     background-color: #FDF1EB;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
 }
 
-.row {
-    display: inline-block;
+#main {
+    display: flex;
 }
 
-.container {
-    margin: 1rem;
+#footer {
+    background-image: url(imagens/footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 181px;
+}
+
+article {
+    margin: auto;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .detalhes {
     margin: 10px;
     min-width: 30vw;
-    max-height: 350px;
+    max-height: 300px;
     overflow-y: scroll;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 .destaque h2, .discussoes h4 {
@@ -115,10 +60,10 @@ body {
 
 .resumo, .discussoes {
     border: 1px solid #5C5C5C;
-    margin: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.resumo p, .resumo h3, .discussoes h3, .discussoes p {
+.resumo p, .resumo h3, .discussoes h3, .comentario p {
     padding: 0 1rem;
     text-align: justify;
 }
@@ -127,8 +72,29 @@ body {
     text-align: center;
 }
 
+.comentario.aberto {
+    box-shadow: 1px 1px 5px px #5C5C5C;
+    margin: 0.5rem;
+}
+
+.comentario h4 {
+    color: #ED7839;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.comentario p {
+    font-size: 1.3rem;
+}
+
 h3 {
     background-color: #FDF1EB;
+}
+
+a {
+    text-decoration: underline;
+    color: #ED7839;
+    font-weight: 400;
 }
 
 button {
@@ -136,9 +102,9 @@ button {
     color: #FDF1EB;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
-    height: 35px;
+    padding: 10px;
 }
 
 .btn {
@@ -155,35 +121,69 @@ button {
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-        transform: rotateY(100deg);
-    }
-    #sidebar.active {
-        margin-left: 0;
-        transform: none;
+textarea, input{
+    width: 95%;
+    min-height: 2.5rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: black 0 0 2px;
+}
+
+label {
+    color: #ED7839;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: left;
+    margin-left: 2rem;
+}
+
+form p {
+    text-align: center;
+    width: 95%;
+    font-size: 1.2rem;
+}
+
+.barra {
+    background-color: #EAF1F2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enviar button{
+    width: 150px;
+    border-radius: 0;
+}
+
+.alterarTexto button {
+    border-radius: 0;
+    background-color: transparent;
+    color: #000;
+    height: 100%;
+    width: 50px;
+}
+
+#negrito, .negrito {
+    font-weight: bolder;
+}
+
+#italico, .italico {
+    font-style: italic;
+}
+
+.limitador {
+    max-width: 95%;
+    margin: auto;
+}
+
+@media screen and (max-width: 885px) {
+    .destaque {
+        flex-direction: column;
     }
 
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
-
-    #sidebarCollapse.active span {
-        margin: 0 auto;
-    }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
+    aside{
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -196,4 +196,79 @@ button {
 
 #mais {
     display: none;
+}
+
+#formulario{
+   display: none;
+}
+
+#atualizar {
+    display: none;
+}
+
+#global  {
+  transition: margin-left .5s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #fff; 
+  box-shadow: #444 1px 2px 5px;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #725C5C;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ED7839;
+}
+
+.sidebar img {
+    max-width: 170px;
+}
+
+.ativa {
+    background-color: #FDF1EB;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.openbtn:hover {
+  background-color: #ED7839;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }

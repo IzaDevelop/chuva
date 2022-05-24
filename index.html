@@ -12,219 +12,223 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+        </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+        </script>
 
     <title>Trabalho</title>
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h1>Slaca 2019</h1>
-                </div>
-                <div>
-                    <img src="imagens/logo.png" alt="Logo 13 Slaca">
-                </div>
-                <ul class="list-unstyled components">
-                    <li>
-                        <a href="#">Apresentação</a>
-                    </li>
-                    <li>
-                        <a href="#">Comitês</a>
-                    </li>
-                    <li>
-                        <a href="#">Autores</a>
-                    </li>
-                    <li>
-                        <a href="#">Eixos temáticos</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Trabalhos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="content">
+    <div id="Sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn icone" onclick="closeNav()">&times;</a>
+        <img src="imagens/logo.png" alt="">
+        <ul>
+            <li><a href="#">Apresentação</a></li>
+            <li><a href="#">Comitês</a></li>
+            <li><a href="#">Autores</a></li>
+            <li><a href="#">Eixos temáticos</a></li>
+            <li><a href="#" class="ativa">Trabalhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid perfil">
-
-                        <button type="button" id="sidebarCollapse" class="navbar-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button"
-                            data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div>
-                                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-                                <h5>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h5>
-                                <p>ISSN: 1234-5678</p>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa-solid fa-globe"></i>Pt-BR
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Inglês</a>
-                                    <a class="dropdown-item" href="#">Espanhol</a>
-                                </div>
-                            </div>
-                            <div class="conta">
-                                <p>Bem-vindo!
-                                    <br>
-                                    alguem12@galoascience.com
-                                </p>
-                                <img src="imagens/perfil.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+    <div id="global">
+        <div id="header">
+            <div class="menu">
+                <button class="openbtn" onclick="openNav()">&equiv;</button>
             </div>
-            </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <article  class="destaque">
-                    <section>
-                        <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos,
-                            do município de
-                            Campinas/SP</h2>
-                        <div class="col-12">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/DWeOEThwYis" title="YouTube video"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <aside>
-                            <div class="btn">
-                                <button><i class="fa solid fa-download icone"></i> Download</button>
-                                <button><i class="fa solid fa-star icone"></i></button>
-                                <button><img src="./imagens/doi.png" alt=""></button>
-                                <h4>Como citar esse trabalho?</h4>
-                            </div>
-                            <div class="detalhes">
-                                <h3>Detalhes</h3>
-                                <p>Tipo de Apresentação: <b>Pôster</b></p>
-                                <p>Eixo temático: <b>Alimentação e saúde (AS)</b></p>
-                                <p>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
-                                <p><b>Autores:</b>
-                                    Galileo Galilei¹
-                                    <br>
-                                    Berta Lange de Morretes²
-                                    <br>
-                                    Isaac Newton³
-                                    <br>
-                                    Cesar Lattes¹
-                                    <br>
-                                    Stephen Hawking⁴
-                                </p>
-                                <p>¹Universidade Estadual de Campinas <br>
-                                    ²Universidade de São Paulo <br>
-                                    ³Instituto Nacional de Pesquisas Espaciais <br>
-                                    ⁴Universidade Federal do Rio de Janeiro</p>
-                            </div>
-                        </aside>
-                    </section>
-                </article>
-                <article class="resumo">
-                    <section>
-                        <h3>Resumo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor,
-                            mollis felis ut, commodo turpis.
-                            Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed
-                            magna ultricies gravida. Etiam
-                            aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut
-                            viverra lorem vestibulum ut.
-                            Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus.
-                            Quisque sollicitudin ligula in
-                            sapien scelerisque, ac gravida eros vestibulum.<span id="pontos">...</span><span id="mais">
-                                <br>
-                                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus
-                                consequat feugiat. Proin dictum justo
-                                arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris
-                                sodales id. Aliquam erat volutpat.
-                                Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna
-                                libero, eget interdum eros
-                                volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac
-                                porttitor. Cras nec ipsum pulvinar,
-                                pharetra libero non, ornare enim. Etiam in laoreet odio.
-                                <br>
-                                Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend
-                                feugiat. Donec eleifend vehicula sem
-                                nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus
-                                maximus dui eget lacus porta tempor.
-                                Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit
-                                elementum ultricies. Aliquam sit
-                                amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus
-                                hendrerit, vulputate nisi sit amet,
-                                viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis,
-                                orci elit eleifend massa, eu
-                                posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum
-                                sapien. Aenean in porta arcu.
-                                Maecenas eu maximus massa.
-                                <br>
-                                Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta
-                                pharetra felis ut hendrerit.
-                                Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus
-                                luctus dolor at viverra. Duis nec
-                                fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at
-                                malesuada arcu. Aliquam erat
-                                volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor
-                                sit amet, consectetur adipiscing
-                                elit.
-                            </span><a onclick="verMais()" id="btnVerMais"><i>Ver mais</i></a></p>
-
-                    </section>
-                </article>
-                <article class="discussoes">
-                    <section>
-                        <h3>Discussões</h3>
-                            <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
-                            <figure>
-                                <img src="imagens/icone1.png" alt="">
-                                <img src="imagens/icone2.png" alt="">
-                                <img src="imagens/icone3.png" alt="">
-                            </figure>
-                            <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
-                            questionamentos ou sugestões para o autor!</p>
-                            <div class="btn">
-                                <button id="botao"><i class="fa solid fa-plus icone"></i> Criar tópico</button>
-                            </div>
-                    </section>
-                </article>
+            <div>
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                <h5>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h5>
+                <p>ISSN: 1234-5678</p>
+            </div>
+            <div>
+                <button>
+                    <i class="fa solid fa-globe"></i> PT, BR
+                </button>
+            </div>
+            <div>
+                <p>
+                    Bem-vindo!<br>alguem12@galoascience.com
+                    <img src="imagens/perfil.png" alt="">
+                </p>
             </div>
         </div>
-    </main>
-    <footer></footer>
+        <div class="limitador">
+        <div id="main">
+        <article>
+            <section class="destaque">
+                <div>
+                <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos,
+                    do município de
+                    Campinas/SP</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DWeOEThwYis" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+                <aside>
+                    <div class="btn">
+                        <button><i class="fa solid fa-download icone"></i> Download</button>
+                        <button><i class="fa solid fa-star icone"></i></button>
+                        <button><img src="./imagens/doi.png" alt=""></button>
+                        <h4>Como citar esse trabalho?</h4>
+                    </div>
+                    <div class="detalhes">
+                        <h3>Detalhes</h3>
+                        <p>Tipo de Apresentação: <b>Pôster</b></p>
+                        <p>Eixo temático: <b>Alimentação e saúde (AS)</b></p>
+                        <p>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
+                        <p><b>Autores:</b>
+                            Galileo Galilei¹
+                            <br>
+                            Berta Lange de Morretes²
+                            <br>
+                            Isaac Newton³
+                            <br>
+                            Cesar Lattes¹
+                            <br>
+                            Stephen Hawking⁴
+                        </p>
+                        <p>¹Universidade Estadual de Campinas <br>
+                            ²Universidade de São Paulo <br>
+                            ³Instituto Nacional de Pesquisas Espaciais <br>
+                            ⁴Universidade Federal do Rio de Janeiro</p>
+                    </div>
+                </aside>
+            </section>
+        </article>
+        </div>
+        <article class="resumo">
+            <section>
+                <h3>Resumo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor,
+                    mollis felis ut, commodo turpis.
+                    Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed
+                    magna ultricies gravida. Etiam
+                    aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut
+                    viverra lorem vestibulum ut.
+                    Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus.
+                    Quisque sollicitudin ligula in
+                    sapien scelerisque, ac gravida eros vestibulum.<span id="pontos">...</span><span id="mais">
+                        <br>
+                        Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus
+                        consequat feugiat. Proin dictum justo
+                        arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris
+                        sodales id. Aliquam erat volutpat.
+                        Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna
+                        libero, eget interdum eros
+                        volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac
+                        porttitor. Cras nec ipsum pulvinar,
+                        pharetra libero non, ornare enim. Etiam in laoreet odio.
+                        <br>
+                        Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend
+                        feugiat. Donec eleifend vehicula sem
+                        nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus
+                        maximus dui eget lacus porta tempor.
+                        Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit
+                        elementum ultricies. Aliquam sit
+                        amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus
+                        hendrerit, vulputate nisi sit amet,
+                        viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis,
+                        orci elit eleifend massa, eu
+                        posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum
+                        sapien. Aenean in porta arcu.
+                        Maecenas eu maximus massa.
+                        <br>
+                        Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta
+                        pharetra felis ut hendrerit.
+                        Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus
+                        luctus dolor at viverra. Duis nec
+                        fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at
+                        malesuada arcu. Aliquam erat
+                        volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing
+                        elit.
+                    </span><a onclick="verMais()" id="btnVerMais"><i>Ver mais</i></a></p>
+            </section>
+        </article>
+        <article class="discussoes">
+            <section>
+                <section>
+                    <h3>Discussões</h3>
+                    <div id="conteudo">
+                        <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
+                        <figure>
+                            <img src="imagens/icone1.png" alt="">
+                            <img src="imagens/icone2.png" alt="">
+                            <img src="imagens/icone3.png" alt="">
+                        </figure>
+                        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
+                            Deixe seus
+                            questionamentos ou sugestões para o autor!</p>
+                        <div class="btn">
+                            <button id="botao"><i class="fa solid fa-plus"></i> Criar tópico</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="form">
+                        <form method="post" id="formulario">
+                            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                            <div>
+                                <label for="assunto">Assunto</label>
+                                <input type="text" name="assunto" id="assunto"
+                                    placeholder="Defina um tópico sucinto para notificar os autores...">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="mensagem">Conteúdo</label>
+                                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+                            </div>
+                            <div class="barra">
+                                <div class="alterarTexto">
+                                    <button id="negrito">B</button>
+                                    <button id="italico">I</button>
+                                </div>
+                                <div class="enviar">
+                                    <button type="submit" onclick="capturar()" id="enviar">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div id="atualizar">
+                        <h4>Seu tópico foi enviado com sucesso! :D</h4>
+                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
+                            tópico for
+                            respondido!</p>
+                        <a href="#">Descubra outros trabalhos!</a>
+                        <br>
+                        <div class="btn">
+                            <button id="btnAtualizar">Criar novo tópico</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article class="comentario">
+            <section id="comentado">
+                <h4 id="tituloComentado"></h4>
+                <p id="conteudoComentado"></p>
+            </section>
+        </article>
+        </div>
+        <div id="footer"></div>
+    </div>
 
-
+    
     <!-- jQuery CDN - AJAX -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     <script src="js/sidebar.js"></script>
     <script src="js/script.js"></script>
 </body>
