@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Meu CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome JS -->
@@ -23,36 +20,35 @@
 
 <body>
     <div id="Sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn icone" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <img src="imagens/logo.png" alt="">
-        <ul>
-            <li><a href="#">Apresentação</a></li>
-            <li><a href="#">Comitês</a></li>
-            <li><a href="#">Autores</a></li>
-            <li><a href="#">Eixos temáticos</a></li>
-            <li><a href="#" class="ativa">Trabalhos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <a href="#">Apresentação</a>
+        <a href="#">Comitês</a>
+        <a href="#">Autores</a>
+        <a href="#">Eixos temáticos</a>
+        <a href="#" class="ativa">Trabalhos</a>
+        <a href="#">Contato</a>
     </div>
 
     <div id="global">
         <div id="header">
-            <div class="menu">
-                <button class="openbtn" onclick="openNav()">&equiv;</button>
-            </div>
+                <button class="openbtn menu" onclick="openNav()">&equiv;</button>
             <div>
                 <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
                 <h5>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h5>
                 <p>ISSN: 1234-5678</p>
             </div>
             <div>
-                <button>
-                    <i class="fa solid fa-globe"></i> PT, BR
+                <button class="idioma">
+                    <i class="fa solid fa-globe"></i> PT, BR <i class="fa solid fa-caret-down"></i>
                 </button>
             </div>
             <div>
                 <p>
-                    Bem-vindo!<br>alguem12@galoascience.com
+                    Bem-vindo!
+                </p>
+                <p>
+                    alguem12@galoascience.com
                     <img src="imagens/perfil.png" alt="">
                 </p>
             </div>
@@ -65,10 +61,12 @@
                 <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos,
                     do município de
                     Campinas/SP</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DWeOEThwYis" title="YouTube video player"
+                <div class="video">
+                <iframe width="560" height="300" src="https://www.youtube.com/embed/DWeOEThwYis" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            </div>
+                </div>
+                </div>
                 <aside>
                     <div class="btn">
                         <button><i class="fa solid fa-download icone"></i> Download</button>
@@ -79,23 +77,23 @@
                     <div class="detalhes">
                         <h3>Detalhes</h3>
                         <p>Tipo de Apresentação: <b>Pôster</b></p>
+                        <br>
                         <p>Eixo temático: <b>Alimentação e saúde (AS)</b></p>
+                        <br>
                         <p>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
+                        <br>
                         <p><b>Autores:</b>
                             Galileo Galilei¹
-                            <br>
                             Berta Lange de Morretes²
-                            <br>
                             Isaac Newton³
-                            <br>
                             Cesar Lattes¹
-                            <br>
                             Stephen Hawking⁴
                         </p>
-                        <p>¹Universidade Estadual de Campinas <br>
-                            ²Universidade de São Paulo <br>
-                            ³Instituto Nacional de Pesquisas Espaciais <br>
-                            ⁴Universidade Federal do Rio de Janeiro</p>
+                        <br>
+                        <p>¹Universidade Estadual de Campinas</p>
+                        <p>²Universidade de São Paulo</p>
+                        <p>³Instituto Nacional de Pesquisas Espaciais </p>
+                        <p>⁴Universidade Federal do Rio de Janeiro</p>
                     </div>
                 </aside>
             </section>
@@ -198,11 +196,12 @@
                 <section>
                     <div id="atualizar">
                         <h4>Seu tópico foi enviado com sucesso! :D</h4>
+                        <br>
                         <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
                             tópico for
                             respondido!</p>
-                        <a href="#">Descubra outros trabalhos!</a>
                         <br>
+                        <a href="#">Descubra outros trabalhos!</a>
                         <div class="btn">
                             <button id="btnAtualizar">Criar novo tópico</button>
                         </div>
@@ -216,7 +215,6 @@
                 <p id="conteudoComentado"></p>
             </section>
         </article>
-        </div>
         <div id="footer"></div>
     </div>
 

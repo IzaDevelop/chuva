@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -15,8 +14,7 @@ body {
 #header {
     background-color: #FDF1EB;
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0px 5px;
 }
@@ -40,12 +38,11 @@ article {
 .destaque {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .detalhes {
-    margin: 10px;
-    min-width: 30vw;
+    margin-bottom: 0.5rem;
+    min-width: 200px;
     max-height: 300px;
     overflow-y: scroll;
     font-size: 1rem;
@@ -64,7 +61,7 @@ article {
 }
 
 .resumo p, .resumo h3, .discussoes h3, .comentario p {
-    padding: 0 1rem;
+    padding: 1rem;
     text-align: justify;
 }
 
@@ -75,6 +72,7 @@ article {
 .comentario.aberto {
     box-shadow: 1px 1px 5px px #5C5C5C;
     margin: 0.5rem;
+    background-color: #000;
 }
 
 .comentario h4 {
@@ -97,6 +95,14 @@ a {
     font-weight: 400;
 }
 
+.idioma {
+    text-decoration: none;
+    color: #000;
+    background-color: #FDF1EB;
+    border: 1px solid #725C5C;
+    border-radius: 5%;    
+}
+
 button {
     background-color: #ED7839;
     color: #FDF1EB;
@@ -109,6 +115,7 @@ button {
 
 .btn {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .btn h4 {
@@ -174,17 +181,6 @@ form p {
 .limitador {
     max-width: 95%;
     margin: auto;
-}
-
-@media screen and (max-width: 885px) {
-    .destaque {
-        flex-direction: column;
-    }
-
-    aside{
-        text-align: center;
-        width: 100%;
-    }
 }
 
 #btnVerMais {
@@ -261,7 +257,6 @@ form p {
   padding: 10px 15px;
   border: none;
   border-radius: 10px;
-  display: block;
 }
 
 .openbtn:hover {
@@ -271,4 +266,29 @@ form p {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 860px) {
+    #header {
+    flex-wrap: wrap;
+    }
+
+    .destaque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destaque h2 {
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    .destaque iframe {
+        max-width: 100%;
+    }
+
+    aside{
+        text-align: center;
+        width: 100%;
+    }
 }

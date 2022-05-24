@@ -47,8 +47,8 @@ formulario.addEventListener("submit", function(event){
     titulo.innerHTML = `${assunto}`;
     paragrafo.innerHTML = `${mensagem}`;
     // exibindo o conteudo na tag
-    comentario.appendChild(titulo);
-    comentario.appendChild(paragrafo);
+    comentario.appendChild(titulo).style.width = "100%";
+    comentario.appendChild(paragrafo).style.width = "100%";
     // resetar o formulário
     formulario.reset();
 });
