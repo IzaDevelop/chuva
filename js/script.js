@@ -13,19 +13,6 @@ if(pontos.style.display === "none"){
     btnVerMais.innerHTML = '<i>Ver menos</i>';
 }}
 
-// esconder conteudo discussões
-$(document).ready(function(){
-	$('#botao').on('click', function(){
-    	$('#conteudo').toggle();
-    });
-});
-
-// mostrar form discussões
-$(document).ready(function(){
-	$('#botao').on('click', function(){
-    	$('#formulario').toggle();
-    });
-});
 
 // criando comentario dinamico
 const formulario = document.querySelector("form");
@@ -51,20 +38,6 @@ formulario.addEventListener("submit", function(event){
     comentario.appendChild(paragrafo).style.width = "100%";
     // resetar o formulário
     formulario.reset();
-});
-
-// mostrar atualizacoes discussões
-$(document).ready(function(){
-	$('#enviar').on('click', function(){
-    	$('#atualizar').toggle();
-    });
-});
-
-// mostrar novo tópico discussões
- $(document).ready(function(){
-	$('#enviar').on('click', function(){
-    	$('#form').toggle();
-    });
 });
 
 // italico e negrito no textarea
