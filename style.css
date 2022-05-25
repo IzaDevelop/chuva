@@ -273,7 +273,7 @@ form p {
 
 @media screen and (max-width: 860px) {
     #header {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     }
 
     .destaque {
