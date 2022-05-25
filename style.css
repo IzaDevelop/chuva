@@ -69,10 +69,8 @@ article {
     text-align: center;
 }
 
-.comentario.aberto {
-    box-shadow: 1px 1px 5px px #5C5C5C;
-    margin: 0.5rem;
-    background-color: #000;
+.video {
+    text-align: center;
 }
 
 .comentario h4 {
@@ -206,34 +204,41 @@ form p {
 }
 
 .sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #fff; 
-  box-shadow: #444 1px 2px 5px;
-  overflow-x: hidden;
-  padding-top: 50px;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #fff; 
+    box-shadow: #444 1px 2px 5px;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 10px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #725C5C;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #725C5C;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #ED7839;
+    color: #ED7839;
 }
 
 .sidebar img {
     max-width: 170px;
+}
+
+.sidebar h3 {
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .ativa {
@@ -241,35 +246,31 @@ form p {
 }
 
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
 }
 
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 10px;
-}
-
-.openbtn:hover {
-  background-color: #ED7839;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .sidebar .openbtn {width: 100vw;} 
 }
 
 @media screen and (max-width: 860px) {
     #header {
-    flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     .destaque {
